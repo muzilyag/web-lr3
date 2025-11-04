@@ -75,7 +75,7 @@ body, html {
     font-weight: 500;
 }
 
-.header__nav-arrow .fa-chevron-down {
+.fa-chevron-down {
     font-size: 0.5rem;
 }
 
@@ -140,14 +140,14 @@ body, html {
     width: 540px;
 }
 
-.hero__description {
+.hero__discription {
     font-size: 1rem;
     font-weight: 300;
     line-height: 28px;
     width: 446px;
 }
 
-.hero__actions {
+.hero_actions {
     margin-top: 32px;
     margin-bottom: 42px;
     display: grid;
@@ -237,7 +237,7 @@ body, html {
     z-index: 1;   
 }
 
-.hero__light {
+.light {
     position: absolute;
     margin-top: 160px;
     right: 0;
