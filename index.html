@@ -15,78 +15,83 @@
 </head>
 
 <body>
-    <img class="background-img" src="images/background-img.png"/>
+    <img class="background-img" src="images/header/background-img.png"/>
     <header class="header">
         <div class="header__container">
             <div class="header__brand">
-                <img class="header__logo" src="images/logo.svg"/>
-                <img class="header__name" src="images/vrnas.svg"/>
+                <img class="header__logo" src="images/header/logo.svg"/>
+                <img class="header__name" src="images/header/vrnas.svg"/>
             </div>
             
             <nav class="header__nav">
                 <button class="header__nav-button">
-                    <span class="header__nav-item header__nav-item--active">Home</span>
+                    <span class="header__nav-text header__nav-text--active">Home</span>
                 </button>
                 <button class="header__nav-button">
-                    <span class="header__nav-item">About us</span>
+                    <span class="header__nav-text">About us</span>
                 </button>
                 <button class="header__nav-button">
-                    <span class="header__nav-item">Service</span>
+                    <span class="header__nav-text">Service</span>
                 </button>
                 <button class="header__nav-button">
-                        <span class="header__nav-item">Page</span>
-                        <div class="header__nav-item_nav-item--arrow_">
+                        <span class="header__nav-text">Page</span>
+                        <div class="header__nav-arrow">
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
                 </button>
                 <button class="header__nav-button">
-                        <span class="header__nav-item">Blog</span>
-                        <div class="header__nav-item_nav-item--arrow_">
+                        <span class="header__nav-text">Blog</span>
+                        <div class="header__nav-arrow">
                             <i class="fa-solid fa-chevron-down"></i>
                         </div>
                 </button>
             </nav>
             
             <button class="header__contact">
-                <span class="header__contact-item">Contact us</span>
+                <span class="header__contact-text">Contact us</span>
             </button>
         </div>
     </header>
 
     <main class="main">
         <div class="background-hero-img">
-            <img class="background-hero-img__content" src="images/assets.svg" src=""/>
+            <img class="background-hero-img__content" src="images/hero/assets.svg" src=""/>
         </div>
 
         <section class="hero">
             <div class="hero__container">
                 <div class="hero__content">
                     <h1 class="hero__title">Immerse Yourself in Virtual Reality</h1>
-                    <p class="hero__discription">
+                    <p class="hero__description">
                         Experience Unforgettable Events in VR. Bring your events to life like never before with our VR services
                     </p>
                 </div>
 
                 <div class="hero__actions">
                     <button class="hero__button">
-                        <span class="header__button-label">DISCOVER MORE</span>
+                        <span class="hero__button-text">DISCOVER MORE</span>
                     </button>
                 </div>
                 
-                <div class="hero__happy-clients">
-                    <img class="happy-clients-img" src="images/happy-clients.png" alt="happy clients"/>
-                    <span class="happy-clients-discription"><b>32k+</b> Happy clients</span>
-                </div>
-
                 <div class="hero__media">
-                    <img class="hero__media-img" src="images/video-preview.png" alt="vr experience"/>
-                    <img class="hero__media-playbutton" src="images/play-button.svg" alt="play"/>
-                </div>
+                    <div class="hero__happy-clients">
+                        <img class="hero__happy-clients-img" src="images/hero/happy-clients.png" alt="happy clients"/>
+                        <div class="hero__happy-clients-content">
+                            <span class="hero__happy-clients-text">32k+ Happy Client</span>
+                            <img class="hero__happy-clients-underline" src="images/hero/underline.svg" alt="underline"/>
+                        </div>
+                    </div>
+
+                    <div class="hero__video">
+                        <img class="hero__video-img" src="images/hero/video-preview.png" alt="vr experience"/>
+                        <img class="hero__video-playbutton" src="images/hero/play-button.svg" alt="play"/>
+                    </div>
+                </div>  
             </div> 
 
             <div class="hero__image">
-                <img class="light" src="images/light.svg"/>
-                <img class="hero__image-content" src="images/man-in-vr.png" alt="man in vr"/>
+                <img class="hero__image-content" src="images/hero/man-in-vr.png" alt="man in vr"/>
+                <img class="hero__light" src="images/hero/light.svg"/>
             </div>
         </section>
     </main>
