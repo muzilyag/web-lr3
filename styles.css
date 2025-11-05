@@ -1,9 +1,11 @@
 :root {
     --background-color: #18181B;
     --font-color: #FFFFFF;
+    --font-gray-color: #d1d1d1;
     --gradient-pink-color: #E95CE9;
     --gradient-blue-color: #0CBAF1;
-    --card-background-color: #252532;
+    --card-advantage-background-color: #252532;
+    --card-advantage-font-color: #B0B0B2;
 }
 
 * {
@@ -108,8 +110,8 @@ body, html {
     position: relative;
     background-image: url('images/hero/assets.svg');
     background-repeat: no-repeat;
-    background-position-y: 100px;
-    background-position-x: -120px;
+    background-position-y: -30px;
+    background-position-x: -400px;
     background-size: 100%;
     pointer-events: none;
 }
@@ -153,6 +155,7 @@ body, html {
     font-weight: 300;
     line-height: 28px;
     width: 446px;
+    color: var(--font-gray-color);
 }
 
 .hero_actions {
@@ -193,6 +196,18 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.hero__happy-clients-boldtext {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.hero__happy-clients-text {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 28px;
 }
 
 .hero__happy-clients-underline {
@@ -253,7 +268,7 @@ body, html {
 }
 
 .advantages__content {
-    background-color: var(--card-background-color);
+    background-color: var(--card-advantage-background-color);
     width: 1200px;
     height: 357px;
     border: 1px solid transparent;
@@ -270,6 +285,7 @@ body, html {
     height: 262px;
     display: grid;
     grid-template-rows: auto auto;
+    gap: 42px;
 }
 
 .advantages__item-content {
@@ -287,6 +303,116 @@ body, html {
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 28px;
+    color: var(--card-advantage-font-color);
 }
+
+.about {
+    margin-top: 70px;
+    display: flex;
+}
+
+.about__frame {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    width: 1332px;
+    gap: 16px;
+}
+
+.about__media {
+    position: relative;
+    width: 700px;
+}
+
+.about__media-img {
+    display: block;
+}
+
+.about__media-video {
+    position: absolute;
+    bottom: 90px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about__content {
+    width: 562px;
+    margin-top: 42px;
+}
+
+.about__header {
+    font-size: 1rem;
+    font-weight: 500;
+    background-clip: text;
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to right, var(--gradient-blue-color), var(--gradient-pink-color));
+    letter-spacing: 14%;
+}
+
+.about__title {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: -0.5%;
+    color: var(--font-color);
+    padding: 16px 0;
+}
+
+.about__description {
+    width: 528px;
+    height: 112px;
+}
+
+.about__description-text {
+    font-weight: 300;
+    line-height: 28px;
+    font-size: 1rem;
+    color: var(--font-gray-color);
+}
+
+.about__list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    padding: 24px 0 32px 0;
+}
+
+.about__list-li {
+    font-size: 1rem;
+    padding-left: 30px;
+    color: var(--font-color);
+    position: relative;
+    background-image: url("images/about/point.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px 16px;
+}
+
+
+.about__button {
+    border: none;
+    background: linear-gradient(to right, var(--gradient-blue-color), var(--gradient-pink-color));
+    padding: 18px 38px;
+    cursor: pointer;
+}
+
+.about__button-label {
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 14px;
+}
+
 
 /*! main end*/
