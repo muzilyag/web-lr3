@@ -3,6 +3,7 @@
     --font-color: #FFFFFF;
     --gradient-pink-color: #E95CE9;
     --gradient-blue-color: #0CBAF1;
+    --card-background-color: #252532;
 }
 
 * {
@@ -21,13 +22,15 @@ body, html {
 .header {
     height: 114px;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    padding: 31px 0 31px 0;
 }
 
 .header__container {
-    width: 100%;
+    width: 1200px;
+    height: 52px;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     gap: 64px;
 }
@@ -36,7 +39,6 @@ body, html {
     display: flex;
     gap: 4px;
     align-items: center;
-    margin: 0 auto;
 }
 
 .header__logo {
@@ -95,34 +97,40 @@ body, html {
     border-image-slice: 1;
     padding: 12px 24px;
     cursor: pointer;
-    margin: 0 auto;
+    margin: 0px 0px 0px 150px;
 }
 
 /*! header end !*/
 
 /*! main start*/
 
-.background-hero-img__content {
-    position: absolute;
-    margin-top: 160px;
-    left: 0;
+.main__content-top {
+    position: relative;
+    background-image: url('images/hero/assets.svg');
+    background-repeat: no-repeat;
+    background-position-y: 100px;
+    background-position-x: -120px;
+    background-size: 100%;
     pointer-events: none;
 }
 
 .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__frame {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0px 100px 0px 100px;
-    gap: 135px;
-    height: 628px;
-    margin-top: 16px;
+    width: 1200px;
+    height: 626px;
 }
 
 .hero__container {
     display: grid;
     grid-template-rows: auto auto auto;
     margin-top: 100px;
-    padding: 0px 20px 0px 20px;
     gap: 32px;
     align-content: start;
 }
@@ -221,20 +229,14 @@ body, html {
 .hero__image {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
+    justify-content: right;
 
-.background-hero-img__content {
-    position: absolute;
-    margin-top: 160px;
-    left: 0;
-    pointer-events: none;
 }
 
 .hero__image-content {
-    position: absolute;
     pointer-events: none;
-    z-index: 1;   
+    position: absolute;
+    z-index: 2;
 }
 
 .light {
@@ -242,7 +244,49 @@ body, html {
     margin-top: 160px;
     right: 0;
     pointer-events: none;
-    z-index: 0;
+}
+
+.advantages {
+    padding: 0px 110px 0px 110px;
+    display: flex;
+    justify-content: center;
+}
+
+.advantages__content {
+    background-color: var(--card-background-color);
+    width: 1200px;
+    height: 357px;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, white, #ffffff00);
+    border-image-slice: 1;
+    padding: 42px 0px 53px 64px;
+    gap: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.advantages__item {
+    width: 325px;
+    height: 262px;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.advantages__item-content {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 12px;
+}
+
+.advantages__title {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.advantages__description {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 28px;
 }
 
 /*! main end*/
