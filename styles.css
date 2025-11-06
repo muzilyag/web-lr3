@@ -6,6 +6,7 @@
     --gradient-blue-color: #0CBAF1;
     --card-advantage-background-color: #252532;
     --card-advantage-font-color: #B0B0B2;
+    --card-service-background: #25253299;
 }
 
 * {
@@ -309,6 +310,8 @@ body, html {
 .about {
     margin-top: 70px;
     display: flex;
+    margin-left: -90px;
+    justify-content: center;
 }
 
 .about__frame {
@@ -355,7 +358,7 @@ body, html {
 	-webkit-background-clip: text;
 	background-clip: text;
 	background-image: linear-gradient(to right, var(--gradient-blue-color), var(--gradient-pink-color));
-    letter-spacing: 14%;
+    letter-spacing: 2.24px;
 }
 
 .about__title {
@@ -399,7 +402,6 @@ body, html {
     background-size: 16px 16px;
 }
 
-
 .about__button {
     border: none;
     background: linear-gradient(to right, var(--gradient-blue-color), var(--gradient-pink-color));
@@ -414,5 +416,111 @@ body, html {
     line-height: 14px;
 }
 
+.service {
+    display: flex;
+    padding: 0px 110px 0px 110px;
+    justify-content: center;
+}
+
+.service__content {
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 1200px;
+    height: 908px;
+    gap: 46px;
+}
+
+.service__header {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 274px;
+}
+
+.service__header-small {
+    font-size: 1rem;
+    font-weight: 500;
+    background-clip: text;
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to right, var(--gradient-blue-color), var(--gradient-pink-color));
+    letter-spacing: 2.24px;
+}
+
+.service__header-big {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: -0.5%;
+    color: var(--font-color);
+    padding: 16px 0;
+}
+
+.service__header-right {
+    width: 625px;
+    height: 112px;
+}
+
+.service__header-text {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--font-gray-color);
+    line-height: 28px;
+}
+
+.service__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.service__cards-column {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 30px 26px;
+}
+
+.service__cards-column-1 {
+    margin-bottom: 133px;
+}
+
+.service__cards-column-2 {
+    margin-top: 57px;
+    margin-bottom: 78px;
+}
+
+.service__cards-column-3 {
+    margin-top: 135px;
+}
+
+.service__card {
+    width: 379px;
+    height: 291px;
+    background: var(--card-service-background);
+    gap: 58px;
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 38px 39px 25px 32px;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, white, #ffffff00);
+    border-image-slice: 1;
+}
+
+.service__card-info {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 12px;
+}
+
+.service__card-title {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.service__card-text {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--card-advantage-font-color);
+}
 
 /*! main end*/
