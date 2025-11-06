@@ -147,7 +147,7 @@ body, html {
 .hero__title {
     font-size: 4rem;
     font-weight: 600;
-    letter-spacing: -0.5%;
+    letter-spacing: -0.7px;
     width: 540px;
 }
 
@@ -273,7 +273,7 @@ body, html {
     width: 1200px;
     height: 357px;
     border: 1px solid transparent;
-    border-image: linear-gradient(to right, white, #ffffff00);
+    border-image: linear-gradient(to right,#41414b 0,#252532 100%);
     border-image-slice: 1;
     padding: 42px 0px 53px 64px;
     gap: 50px;
@@ -365,7 +365,7 @@ body, html {
     font-size: 3rem;
     font-weight: 600;
     line-height: 58px;
-    letter-spacing: -0.5%;
+    letter-spacing: -0.7px;
     color: var(--font-color);
     padding: 16px 0;
 }
@@ -422,6 +422,12 @@ body, html {
     justify-content: center;
 }
 
+.service__light {
+    position: absolute;
+    right: 0;
+    margin-top: 570px;
+}
+
 .service__content {
     display: grid;
     grid-template-rows: auto auto;
@@ -451,7 +457,7 @@ body, html {
     font-size: 3rem;
     font-weight: 600;
     line-height: 58px;
-    letter-spacing: -0.5%;
+    letter-spacing: -0.7px;
     color: var(--font-color);
     padding: 16px 0;
 }
@@ -501,7 +507,7 @@ body, html {
     grid-template-rows: auto auto;
     padding: 38px 39px 25px 32px;
     border: 1px solid transparent;
-    border-image: linear-gradient(to right, white, #ffffff00);
+    border-image: linear-gradient(to right,#41414b 0,#252532 100%);
     border-image-slice: 1;
 }
 
@@ -509,6 +515,7 @@ body, html {
     position: relative;
     overflow: hidden;
 }
+
 .service__card-effect{
     position: absolute;
     width: 100%;
@@ -525,7 +532,11 @@ body, html {
     bottom: 0;
 }
 
-.button {
+.service__card:hover {
+    border-image: linear-gradient(to right, var(--gradient-blue-color), var(--gradient-pink-color)) 1;
+}
+
+.service__button {
     display: flex;
     justify-content: flex-end;
     border: 1px solid transparent;
@@ -536,7 +547,7 @@ body, html {
     cursor: pointer;
 }
 
-.button_label {
+.service__button_label {
     font-weight: 700;
     font-size: 0.875rem;
     letter-spacing: 1.5px;
@@ -558,6 +569,123 @@ body, html {
     font-weight: 400;
     line-height: 28px;
     color: var(--card-advantage-font-color);
+}
+
+.why-choose-us {
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+    padding: 0 0 0 120px;
+}
+
+.why-choose-us__container {
+    display: grid;
+    grid-template-columns: auto 662px;
+    max-width: 1301px;
+    max-height: 699px;
+    gap: 180px;
+}
+
+.why-choose-us__content {
+    margin-top: 100px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 32px;
+}
+
+.why-choose-us__title-group {
+    max-width: 546px;
+}
+
+.why-choose-us__small-header {
+    font-size: 1rem;
+    font-weight: 500;
+    background-clip: text;
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to right, var(--gradient-blue-color), var(--gradient-pink-color));
+    letter-spacing: 2.24px;
+}
+
+.why-choose-us__big-header {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: -0.7px;
+    color: var(--font-color);
+    padding: 16px 0;
+}
+
+.why-choose-us__list {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 48px;
+    max-height: 334px;
+}
+
+.list__element {
+    width: 548px;
+    max-height: 162px;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 12px;
+}
+
+.list__button {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #FFFFFF59;
+    max-width: 548px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    height: 38px;
+}
+
+.list__button_label {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.list__text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--font-gray-color);
+}
+
+.why-light {
+    position: absolute;
+    right: -3px;
+    margin-top: 50px;
+}
+
+.why-choose-us__media {
+    position: relative;
+    width: 570px;
+}
+
+.background {
+    position: absolute;
+    bottom: 120px;
+    right: 70px;
+    width: 196px;
+}
+
+.why-choose-us__video {
+    position: absolute;
+    bottom: -40px;
+    right: 80px;
+    width: 196px;
+}
+
+.why__video-playbutton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*! main end*/
