@@ -505,6 +505,43 @@ body, html {
     border-image-slice: 1;
 }
 
+.service__card{
+    position: relative;
+    overflow: hidden;
+}
+.service__card-effect{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(180deg, rgba(37, 37, 50, 0) 0%, rgba(37, 37, 50, 0.91) 53.06%, #252532 100%);
+    bottom: -100%;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service__card:hover .service__card-effect{
+    bottom: 0;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, var(--gradient-blue-color), var(--gradient-pink-color));
+    background: #FFFFFF0F;
+    border-image-slice: 1;
+    padding: 18px 38px;
+    cursor: pointer;
+}
+
+.button_label {
+    font-weight: 700;
+    font-size: 0.875rem;
+    letter-spacing: 1.5px;
+}
+
 .service__card-info {
     display: grid;
     grid-template-rows: auto auto;
