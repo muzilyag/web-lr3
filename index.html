@@ -20,36 +20,36 @@
     <header class="header">
         <div class="header__container">
             <div class="header__brand">
-                <img class="header__logo" src="images/header/logo.svg"/>
-                <img class="header__name" src="images/header/vrnas.svg"/>
+                <img class="brand__logo" src="images/header/logo.svg"/>
+                <img class="brand__name" src="images/header/vrnas.svg"/>
             </div>
             
             <nav class="header__nav">
                 <button class="header__nav-button">
-                    <span class="header__nav-text header__nav-text--active">Home</span>
+                    <a class="header__link header__link--active" href="#">Home</a>
                 </button>
                 <button class="header__nav-button">
-                    <span class="header__nav-text">About us</span>
+                    <a class="header__link" href="#">About us</a>
                 </button>
                 <button class="header__nav-button">
-                    <span class="header__nav-text">Service</span>
+                    <a class="header__link" href="#">Service</a>
                 </button>
                 <button class="header__nav-button">
-                        <span class="header__nav-text">Page</span>
-                        <div class="header__nav-arrow">
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
+                    <a class="header__link" href="#">Page</a>
+                    <div class="header__nav-arrow">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
                 </button>
                 <button class="header__nav-button">
-                        <span class="header__nav-text">Blog</span>
-                        <div class="header__nav-arrow">
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
+                    <a class="header__link" href="#">Blog</a>
+                    <div class="header__nav-arrow">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
                 </button>
             </nav>
             
-            <button class="header__contact">
-                <span class="header__contact-text">Contact us</span>
+            <button class="header__contact header__contact-text">
+                Contact us
             </button>
         </div>
     </header>
@@ -68,8 +68,8 @@
                         </div>
 
                         <div class="hero__actions">
-                            <button class="hero__button">
-                                <span class="hero__button-text">DISCOVER MORE</span>
+                            <button class="gradient-button gradient-button_label">
+                                DISCOVER MORE
                             </button>
                         </div>
                         
@@ -78,7 +78,9 @@
                                 <img class="hero__happy-clients-img" src="images/hero/happy-сlients.svg" alt="happy clients"/>
                                 <div class="hero__happy-clients-content">
                                     <span class="hero__happy-clients-text">
-                                        <span class="hero__happy-clients-boldtext">32k+</span>
+                                        <span class="hero__happy-clients-boldtext">
+                                            32k+
+                                        </span>
                                          Happy Client
                                     </span>
                                     <img class="hero__happy-clients-underline" src="images/hero/underline.svg" alt="underline"/>
@@ -87,14 +89,13 @@
 
                             <div class="hero__video">
                                 <img class="hero__video-img" src="images/hero/video-preview.png" alt="vr experience"/>
-                                <img class="hero__video-playbutton" src="images/hero/play-button.svg" alt="play"/>
+                                <img class="video-playbutton" src="images/hero/play-button.svg" alt="play"/>
                             </div>
                         </div>  
                     </div> 
 
                     <div class="hero__image">
                         <img class="hero__image-content" src="images/hero/man-in-vr.png" alt="man in vr"/>
-                        <img class="light" src="images/hero/light.svg"/>
                     </div>
                 </div>
             </section>
@@ -141,20 +142,21 @@
         </div>
 
         <div class="main__content-middle">
-            <img class="service__light" src="images/service/light.svg"/>
             <section class="about">
                 <div class="about__frame">
                     <div class="about__media">
-                        <img class="about__media-img" src="images/about/vr.svg"/>
+                        <img class="about__media-img" src="images/about/vr.png"/>
                         <div class="about__media-video">
                             <img class="video-preview" src="images/about/video-preview.svg"/>
-                            <img class="play-button" src="images/hero/play-button.svg"/>
+                            <img class="video-playbutton" src="images/hero/play-button.svg"/>
                         </div>
                     </div>
 
                     <div class="about__content">
-                        <span class="about__header">ABOUT US</span>
-                        <h3 class="about__title">Bring your events to life like never before with our VR services.</h3>
+                        <div class="about__title-group">
+                            <h3 class="gradient-text about_gradient-title">ABOUT US</span>
+                            <h3 class="about__title">Bring your events to life like never before with our VR services.</h3>
+                        </div>
                         <div class="about__description">
                             <span class="about__description-text">
                                 VRNas is a leading provider of VR services for education, 
@@ -168,8 +170,8 @@
                             <li class="about__list-li">Versatile Applications</li>
                             <li class="about__list-li">Affordable and Accessible</li>
                         </ul>
-                        <button class="about__button">
-                            <span class="about__button-label">READ MORE</span>
+                        <button class="gradient-button gradient-button_label">
+                            READ MORE
                         </button>
                     </div>
                 </div>
@@ -179,9 +181,8 @@
                 <div class="service__content">
                     <div class="service__header">
                         <div class="service__header-left">
-                            <span class="service__header-small">OUR SERVICE</span>
-                            <br/>
-                            <span class="service__header-big">Our Service</span>
+                            <h3 class="gradient-text service_gradient-title">OUR SERVICE</h3>
+                            <span class="white-text">Our Service</span>
                         </div>
 
                         <div class="service__header-right">
@@ -301,9 +302,8 @@
             <div class="why-choose-us__container">
                 <div class="why-choose-us__content">
                     <div class="why-choose-us__title-group">
-                        <span class="why-choose-us__small-header">WHY CHOOSE US</span>
-                        <br/>
-                        <span class="why-choose-us__big-header">Why Choose Us for Your VR Needs</span>
+                        <span class="gradient-text why-choose-us_gradient-title">WHY CHOOSE US</span>
+                        <span class="white-text">Why Choose Us for Your VR Needs</span>
                     </div>
                     <div class="why-choose-us__list">
                         <div class="list__element">
@@ -340,11 +340,10 @@
                 </div>
 
                 <div class="why-choose-us__media">
-                    <img class="why-light" src="images/why-choose-us/light.svg"/>
-                    <img class="why-choose-us__img" src="images/why-choose-us/man.svg"/>
+                    <img class="why-choose-us__img" src="images/why-choose-us/man.png"/>
                     <div class="why-choose-us__video">
                         <img class="why__video-preview" src="images/why-choose-us/video.svg"/>
-                        <img class="why__video-playbutton" src="images/hero/play-button.svg"/>
+                        <img class="video-playbutton" src="images/hero/play-button.svg"/>
                     </div>
                 </div>
             </div>
@@ -353,8 +352,8 @@
         <section class="how-start">
             <div class="how-start__container">
                 <div class="how-start__title-group">
-                    <h3 class="how-start__small-header">HOW TO GET STARTED</h3>
-                    <h2 class="how-start__big-header">
+                    <h3 class="gradient-text how-start_gradient-title">HOW TO GET STARTED</h3>
+                    <h2 class="white-text how-start_white-text">
                         Bringing Your Virtual Reality
                         Dreams to Life
                     </h2>
@@ -363,7 +362,7 @@
                     <img class="how-start__video_preview" src="images/how-start/video.svg"/>
                 </div>
                 <div class="how-start__button">
-                    <button class="how__button how__button_label">
+                    <button class="gradient-button gradient-button_label">
                         GET STARTED
                     </button>
                 </div>
@@ -381,10 +380,10 @@
                 <div class="pricelist__header">
                     <div class="pricelist__header-left">
                         <div class="pricelist__title-group">
-                            <h3 class="pricelist__small-title">
+                            <h3 class="gradient-text pricelist_gradient-title">
                                 OUR PRICING
                             </h3>
-                            <h2 class="pricelist__big-title">
+                            <h2 class="white-text">
                                 Affordable VR Services for Everyone
                             </h2>
                         </div>
@@ -452,7 +451,7 @@
                 <div class="pricelist__card">
                     <span class="pricelist__card-title">Start from</span>
                     <span class="pricelist__card-price">$99</span>
-                    <button class="pricelist__card-button card__button-label">
+                    <button class="gradient-button gradient-button_label">
                         GET STARTED
                     </button>
                     <span class="pricelist__card-footer">30 Days Moneyback Guarantee</span>
@@ -463,8 +462,8 @@
         <section class="partners">
             <div class="partners__container">
                 <div class="partners__title-group">
-                    <h3 class="partners__small-title">OUR TRUSTED PARTNERS</h3>
-                    <h2 class="partners__big-title">Discover the Companies We Work With</h2>
+                    <h3 class="gradient-text partners_gradient-title">OUR TRUSTED PARTNERS</h3>
+                    <h2 class="white-text">Discover the Companies We Work With</h2>
                 </div>
                 <img class="partners__img" src="images/partners/partners.svg"/>
             </div>
@@ -473,9 +472,9 @@
         <section class="articles">
             <div class="articles__container">
                 <div class="articles__header">
-                    <div class="artciles__title-group">
-                        <h3 class="articles__small-title">OUR ARTICLES</h3>
-                        <h2 class="articles__big-title">Stay Up-to-Date with Our VR Insights</h2>
+                    <div class="articles__title-group">
+                        <h3 class="gradient-text  articles_gradient-title">OUR ARTICLES</h3>
+                        <h2 class="white-text">Stay Up-to-Date with Our VR Insights</h2>
                     </div>
                     <div class="articles__right-side">
                         <button class="articles__header-button articles__header-button_label">SEE ALL</button>
@@ -533,11 +532,10 @@
     <footer class="footer">
     <div class="footer__container">
         <div class="footer__content">
-            <!-- Первая колонка - Логотип и соцсети -->
             <div class="footer__column">
                 <div class="footer__logo">
-                    <img class="header__logo" src="images/header/logo.svg" alt="Logo"/>
-                    <img class="header__name" src="images/header/vrnas.svg" alt="VRNas"/>
+                    <img class="brand__logo" src="images/header/logo.svg" alt="Logo"/>
+                    <img class="brand__name" src="images/header/vrnas.svg" alt="VRNas"/>
                 </div>
                 <div class="footer__media-links">
                     <a href="#" class="footer__media-link">
