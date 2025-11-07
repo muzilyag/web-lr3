@@ -16,7 +16,7 @@
 - - [x] Секция partners
 - - [x] Секция articles
 - - [x] Секция subscribe
-- [ ] Footer
+- [x] Footer
 
 ## Технологии
 - HTML
