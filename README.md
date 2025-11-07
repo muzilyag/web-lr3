@@ -12,7 +12,7 @@
 - - [x] Секция why choose us
 - - [x] Секция how-start
 - - [x] Секция testimonial
-- - [ ] Секция pricelist
+- - [x] Секция pricelist
 - - [ ] Секция partners
 - - [ ] Секция articles
 - - [ ] Секция subscribe

@@ -764,5 +764,172 @@ body, html {
     max-height: 1247px;
 }
 
+.pricelist {
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+    background-image: url("images/pricelist/light.svg");
+    background-repeat: no-repeat;
+    background-position-x: 350px;
+    background-position-y: 120px;
+}
+
+.pricelist__container {
+    width: 1253px;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 48px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.pricelist__header {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.pricelist__header-left {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 16px;
+}
+
+.pricelist__title-group {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 12px;
+}
+
+.pricelist__small-title {
+    font-size: 1rem;
+    font-weight: 500;
+    background-clip: text;
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to right, var(--gradient-blue-color) 0, var(--gradient-pink-color) 10%);
+    letter-spacing: 2.24px;
+    -webkit-text-fill-color: transparent;
+    
+    /* margin-bottom: 12px; */
+}
+
+.pricelist__big-title {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: -0.7px;
+    color: var(--font-color);
+}
+
+.pricelist__header_text {
+    color: var(--font-gray-color);
+    font-weight: 300;
+    line-height: 28px;
+    font-size: 1rem;
+    width: 625px;
+}
+
+.pricelist__content {
+    background: var(--card-service-background);
+    gap: 58px;
+    padding: 42px 0px 55px 55px;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right,#41414b 0,#252532 100%);
+    border-image-slice: 1;
+    max-width: 1200px;
+    height: 587px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.pricelist__list {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 32px;
+    width: 800px;
+    border-right: 1px solid #FFFFFF59;
+}
+
+.pricelist__list-li {
+    max-width: 640px;
+    max-height: 147px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 16px;
+}
+
+.price__text {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 12px;
+}
+
+.price__title {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.price__description {
+    font-family: 1rem;
+    font-weight: 400;
+    color: var(--card-advantage-font-color);
+    line-height: 28px;
+}
+
+.pricelist__card {
+    background: var(--card-advantage-background-color);
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right,var(--gradient-blue-color) 0,var(--gradient-pink-color) 100%);
+    border-image-slice: 1;
+    width: 321px;
+    height: 222px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 180px;
+}
+
+.pricelist__card-title {
+    text-align: center;
+    padding-top: 20px;
+    color: var(--font-gray-color);
+    font-size: 0.875rem;
+    line-height: 20px;
+    margin-bottom: -22px;
+    font-weight: 500;
+}
+
+.pricelist__card-price {
+    font-size: 3.75rem;
+    line-height: 66px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.pricelist__card-button {
+    border: none;
+    background: linear-gradient(to right, var(--gradient-blue-color) 0, var(--gradient-pink-color) 100%);
+    padding: 18px 38px;
+    cursor: pointer;
+}
+
+.card__button-label {
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 14px;
+}
+
+.pricelist__card-footer {
+    font-size: 0.75rem;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--card-advantage-font-color);
+    text-align: center;
+}
 
 /*! main end*/
