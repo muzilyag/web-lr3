@@ -10,8 +10,8 @@
 - - [x] Секция about us - о компании
 - - [x] Секция service
 - - [x] Секция why choose us
-- - [ ] Секция how-start
-- - [ ] Секция testimonial
+- - [x] Секция how-start
+- - [x] Секция testimonial
 - - [ ] Секция pricelist
 - - [ ] Секция partners
 - - [ ] Секция articles
