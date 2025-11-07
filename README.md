@@ -13,8 +13,8 @@
 - - [x] Секция how-start
 - - [x] Секция testimonial
 - - [x] Секция pricelist
-- - [ ] Секция partners
-- - [ ] Секция articles
+- - [x] Секция partners
+- - [x] Секция articles
 - - [ ] Секция subscribe
 - [ ] Footer
 
