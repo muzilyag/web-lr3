@@ -1123,4 +1123,77 @@ body, html {
     cursor: pointer;
 }
 
+.subscribe {
+    display: flex;
+    padding: 0 120px;
+    margin-top: 150px;
+}
+
+.subscribe__container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 74px;
+    background: linear-gradient(to right, var(--gradient-blue-color) 0, var(--gradient-pink-color) 100%);
+    width: 1200px;
+    height: 185px;
+    align-items: center;
+}
+
+.subscribe__text {
+    width: 520px;
+    height: 116px;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 58px;
+    letter-spacing: -2px;
+}
+
+.input-email {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-email input {
+    width: 100%;
+    padding: 15px 60px 15px 50px;
+    border: none;
+    font-size: 16px;
+    background: #FFFFFF12;
+    transition: all 0.3s ease;
+}
+
+.input-email input::placeholder {
+    color: white;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.submit-btn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #FFFFFF36;
+    color: white;
+    border: none;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-50%) scale(1.05);
+}
+
 /*! main end*/
